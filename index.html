@@ -214,23 +214,23 @@
   <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
-              <h2 class="title is-3">Introducing ImageNet++</h2>
+              <h2 class="title is-3">New Probing Techniques</h2>
               <div class="content has-text-justified">
                   <p class="c18">
-                      <span class="c0">To establish baseline performance for different curation strategies, we created ImageNet++, the largest and most diverse set of ImageNet-1K training set variations to date. ImageNet++ consists of 5 new dataset "shifts" in addition to the original ImageNet-1K: </span>
+                      <span class="c0">We use a comprehensive suite of probing techniques to determine whether the erased concept persists, including: </span>
                   </p>
                   <ol class="c28 lst-kix_st344of4rgcu-0 start" start="1">
                       <li class="c18 c29 li-bullet-0">
-                          <span class="c0">OI1000: A subset of OpenImages dataset using crowdsourced labeling </span>
+                          <span class="c0">Leveraging existing adversarial prompts.</span>
                       </li>
-                      <li class="c18 c29 li-bullet-0"><span class="c0">LA1000 (img2img): Images from LAION dataset selected using embedding-based search </span></li>
-                      <li class="c18 c29 li-bullet-0"><span class="c0">LA1000 (txt2img): Another LAION subset selected using text-based embedding search </span></li>
-                      <li class="c18 c29 li-bullet-0"><span class="c0">SD1000 (img2img): Synthetic images generated from ImageNet using Stable Diffusion </span></li>
-                      <li class="c18 c29 li-bullet-0"><span class="c0">SD1000 (txt2img): Synthetic images generated using class names as prompts </span></li>
+                      <li class="c18 c29 li-bullet-0"><span class="c0">Supplying additional visual cues, such as a noisy image or an inpainting frame </span></li>
+                      <li class="c18 c29 li-bullet-0"><span class="c0">Tracking the concept throughout the erasure process</span></li>
+                      <li class="c18 c29 li-bullet-0"><span class="c0">Introducing a novel probing method that re-noises the image during generation to recover otherwise erased concepts</span></li>
+                      
                   </ol>
                   <p class="c10"><span class="c0"></span></p>
                   <p class="c18"><span class="c9">The benchmark also includes several analytical metrics to help understand dataset properties without requiring model training, such as class imbalance measures and image quality scores.</span></p>
-                  <img src="static/images/imagenetpp.jpg" alt="The ImageNet++ distribution shifts" />
+                  <img src="static/images/noising.png" alt="Noising probe" />
               </div>
           </div>
       </div>
