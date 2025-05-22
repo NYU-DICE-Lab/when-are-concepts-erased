@@ -169,9 +169,9 @@
           <div class="column is-four-fifths">
               <!-- <h5 class="subtitle is-5">October 8, 2024</h5>  -->  
               <div class="content has-text-justified">
-               <!--   <p class="c18"><span class="c9">We introduce evaluations that reveal limitations in how diffusion models erase concepts.</span>
+                 <p class="c18"><span class="c9">We introduce evaluations that reveal limitations in how diffusion models erase concepts.</span>
                   </p>
-                  <p class="c18"><span class="c9">To classify the existing erasure methods into these two conceptual models of erasure, we introduce a suite of comprehensive evaluations. Ideally, when a concept is truly erased using destruction-based methods, the model should no longer generate the concept under any circumstances and should retain no residual knowledge of it. In contrast, guidance-based methods aim to prevent the generation of the concept when explicitly prompted, but may still allow it to appear in other contexts.
+              <!--     <p class="c18"><span class="c9">To classify the existing erasure methods into these two conceptual models of erasure, we introduce a suite of comprehensive evaluations. Ideally, when a concept is truly erased using destruction-based methods, the model should no longer generate the concept under any circumstances and should retain no residual knowledge of it. In contrast, guidance-based methods aim to prevent the generation of the concept when explicitly prompted, but may still allow it to appear in other contexts.
                     In both cases, the methods should ideally have minimal impact on the model’s behavior when prompted with unrelated concepts.</span>
                   </p> -->  
               </div>
@@ -184,12 +184,12 @@
   <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
-              <h2 class="title is-3">What is SELECT?</h2>
+              <h2 class="title is-3">Guidance-Based Avoidance vs. Destruction-Based Removal</h2>
               <div class="content has-text-justified">
                   <p class="c18">
-                      <span class="c0">SELECT (Systematic Evaluation of Large-scale Efficient Curation Techniques) is a benchmark that allows researchers to assess the effectiveness of different data curation strategies. It provides a standardized way to measure how well curated datasets perform across a range of metrics, including: </span>
+                      <span class="c0">We claim that guidance-based approaches work by redirecting the model's conditional guidance rather than eliminating the concept from the model. Accordingly, they might still generate the concept when prompted with optimized inputs or other cues. In contrast, destruction-based approaches fundamentally suppress the model's likelihood of generating the erased concept, corresponding to a greater resistance to various attacks, but also potentially affecting more nearby concepts. </span>
                   </p>
-                  <ol class="c28 lst-kix_st344of4rgcu-0 start" start="1">
+                  <!-- <ol class="c28 lst-kix_st344of4rgcu-0 start" start="1">
                       <li class="c18 c29 li-bullet-0">
                           <span class="c0">Base accuracy on ImageNet validation set </span>
                       </li>
@@ -199,7 +199,8 @@
                   </ol>
                   <p class="c10"><span class="c0"></span></p>
                   <p class="c18"><span class="c9">The benchmark also includes several analytical metrics to help understand dataset properties without requiring model training, such as class imbalance measures and image quality scores.</span></p>
-                  <img src="static/images/select.jpg" alt="SELECT benchmark" />
+                  --> 
+                  <img src="static/images/intro.jpg" alt="SELECT benchmark" />
               </div>
           </div>
       </div>
