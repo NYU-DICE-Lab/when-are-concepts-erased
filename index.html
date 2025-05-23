@@ -235,7 +235,7 @@
                   <p class="c18"><span class="c9">The benchmark also includes several analytical metrics to help understand dataset properties without requiring model training, such as class imbalance measures and image quality scores.</span></p>
                   <figure style="text-align: center; margin-top: 1em;">
                     <img src="static/images/noising.png" alt="Noising probe" style="max-width: 100%;">
-                    <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em;">Our Noise-Based probing technique adds additional noise to the diffusion trajectory. At every diffusion denoising timestep, we add back a controlled amount of noise to allow the model to search in a larger latent space.</figcaption>
+                    <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em;">Our Noise-Based probing technique adds additional noise. At every diffusion denoising timestep, we add back a controlled amount of noise to allow the model to search in a larger latent space.</figcaption>
                   </figure>
                 </div>
           </div>
@@ -259,8 +259,11 @@
                     <!-- <li class="c18 c29 li-bullet-0"><span class="c0"><strong>Bigger isn't always better:</strong> The smallest dataset, LA1000 (img2img), often outperformed larger datasets, highlighting the importance of curation quality over quantity.</span></li>
                     <!-- <li class="c18 c29 li-bullet-0"><span class="c0"><strong>Image-conditioned methods outperform text-based ones:</strong> Across different curation strategies, methods that used images as a starting point (img2img) generally performed better than those using only text descriptions (txt2img).</span></li>  --> 
                   </ol>
-                  <img src="static/images/full_diagram-compressed-1.png" alt="Comparative performance of data curation methods, visualized in a radar plot" />
-              </div>
+                  <figure style="text-align: center; margin-top: 1em;">
+                    <img src="static/images/full_diagram-compressed-1.png" alt="Comparative performance of data curation methods" style="max-width: 100%;">
+                    <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em;">Our Noise-Based probing technique adds additional noise to the diffusion trajectory. At every diffusion denoising timestep, we add back a controlled amount of noise to allow the model to search in a larger latent space.</figcaption>
+                  </figure>
+            </div>
           </div>
       </div>
   </div>
