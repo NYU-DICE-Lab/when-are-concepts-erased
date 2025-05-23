@@ -204,8 +204,8 @@
                   <p class="c18"><span class="c9">The benchmark also includes several analytical metrics to help understand dataset properties without requiring model training, such as class imbalance measures and image quality scores.</span></p>
                   --> 
                   <figure style="text-align: center; margin-top: 1em;">
-                    <img src="static/images/intro.png" alt="Conceptual diagram" style="max-width: 150%;">
-                    <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em;">We suggest that diffusion model concept erasure methods can be broadly categorized into two types: (1) Guidance-Based Avoidance, which avoids a concept by redirecting the model to a different concept locations. (2) Destruction-Based Removal, which reduces the likelihood of the target concept while keeping guidance intact, forcing the model to a nearby concept when prompted with the target concept.</figcaption>
+                    <img src="static/images/intro.png" alt="Conceptual diagram" style="max-width: 100%;">
+                    <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em;">We suggest that diffusion model concept erasure methods can be broadly categorized into two types: (1) Guidance-Based Avoidance, which avoids a concept by redirecting the model to a different concept locations. (2) Destruction-Based Removal, which reduces the likelihood of the target concept while keeping guidance intact.</figcaption>
                   </figure>
                 </div>
           </div>
@@ -233,8 +233,11 @@
                   </ol>
                   <p class="c10"><span class="c0"></span></p>
                   <p class="c18"><span class="c9">The benchmark also includes several analytical metrics to help understand dataset properties without requiring model training, such as class imbalance measures and image quality scores.</span></p>
-                  <img src="static/images/noising.png" alt="Noising probe" />
-              </div>
+                  <figure style="text-align: center; margin-top: 1em;">
+                    <img src="static/images/noising.png" alt="Noising probe" style="max-width: 100%;">
+                    <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em;">Our Noise-Based probing technique adds additional noise to the diffusion trajectory. At every diffusion denoising timestep, we add back a controlled amount of noise to allow the model to search in a larger latent space.</figcaption>
+                  </figure>
+                </div>
           </div>
       </div>
   </div>
