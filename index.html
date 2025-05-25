@@ -190,7 +190,7 @@
               <h2 class="title is-3">Guidance-Based Avoidance vs. Destruction-Based Removal</h2>
               <div class="content has-text-justified">
                   <p class="c18">
-                      <span class="c0">We claim that guidance-based approaches work by redirecting the model's conditional guidance rather than eliminating the concept from the model. Accordingly, they might still generate the concept when prompted with optimized inputs or other cues. In contrast, destruction-based approaches fundamentally suppress the model's likelihood of generating the erased concept, corresponding to a greater resistance to various attacks, but also potentially affecting more nearby concepts. </span>
+                      <span class="c0">Guidance-based approaches redirect the model's conditional signals without removing the concept itself, allowing it to re-emerge under optimized prompts or cues. In contrast, destruction-based methods suppress the model’s likelihood of generating the concept. </span>
                   </p>
                   <!-- <ol class="c28 lst-kix_st344of4rgcu-0 start" start="1">
                       <li class="c18 c29 li-bullet-0">
@@ -205,7 +205,7 @@
                   --> 
                   <figure style="text-align: center; margin-top: 1em;">
                     <img src="static/images/intro.png" alt="Conceptual diagram" style="max-width: 100%;">
-                    <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em;">We suggest that diffusion model concept erasure methods can be broadly categorized into two types: (1) Guidance-Based Avoidance, which avoids a concept by redirecting the model to a different concept locations. (2) Destruction-Based Removal, which reduces the likelihood of the target concept while keeping guidance intact.</figcaption>
+                    <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em;">Diffusion model concept erasure methods can be categorized into two types: (1) Guidance-Based Avoidance, which avoids a concept by redirecting the model to a different concept locations. (2) Destruction-Based Removal, which reduces the likelihood of the target concept while keeping guidance intact.</figcaption>
                   </figure>
                 </div>
           </div>
