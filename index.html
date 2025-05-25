@@ -235,7 +235,7 @@
                   <!-- <p class="c18"><span class="c9">The benchmark also includes several analytical metrics to help understand dataset properties without requiring model training, such as class imbalance measures and image quality scores.</span></p> -->
                   <figure style="text-align: center; margin-top: 1em;">
                     <img src="static/images/noising.png" alt="Noising probe" style="max-width: 100%;">
-                    <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em;">Our Noise-Based probing technique adds additional noise. At every diffusion denoising timestep, we add back a controlled amount of noise to allow the model to search in a larger latent space.</figcaption>
+                    <figcaption style="font-size: 0.95em; color: #555; margin-top: 0.5em;">Our noise-based probing technique injects additional noise into the diffusion trajectory, allowing recovery of supposedly erased concepts, even in cases where other methods fail.</figcaption>
                   </figure>
                 </div>
           </div>
@@ -276,11 +276,7 @@
               <h2 class="title is-3">Implications and Future Work</h2>
               <div class="content has-text-justified">
                   <p class="c18">
-                      <span class="c0">We demonstrate that erasure methods may operate via
-                        two distinct principles: guidance based avoidance and destruction based removal. This distinction
-                        explains puzzling differences in method behavior and provides key insights for developing erasure
-                        techniques that better balance robustness with capability preservation. Our findings take an impor-
-                        tant step toward understanding how erasure mechanisms transform model behavior.</span>
+                      <span class="c0">Our study suggests a useful distinction in concept erasure for diffusion models: guidance-based avoidance vs. destruction-based removal. Through systematic evaluation across four probing categories, we show how this perspective helps explain differences in method behavior and supports the development of more robust, capability-preserving erasure techniques.</span>
                   </p>
                   <!-- <ol class="c28 lst-kix_st344of4rgcu-0 start" start="1">
                     <li class="c18 c29 li-bullet-0"><span class="c0"><strong>Improving reduced-cost curation:</strong> While no method matched expert curation, the strong performance of embedding-based search suggests promising directions for developing more efficient curation techniques.</span></li>
